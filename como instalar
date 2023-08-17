@@ -1,0 +1,63 @@
+sudo apt -y update && apt -y upgrade
+
+Reincie a VPS após a atualização
+
+reboot
+
+Vá para o diretório home
+
+cd /home
+
+Baixe e execute o instalador do Github
+
+sudo apt install -y git && git clone https://github.com/paulohcgs1997/instalador.git instalador && sudo chmod -R 777 instalador && cd instalador && sudo ./install_primaria
+
+[0] Instalar Whaticket
+
+Insira senha para o usuário Deploy e Banco de Dados (Não utilizar caracteres especiais), não use a do exemplo;
+
+minhasenha123
+
+Insira o link do GITHUB do seu Whaticket que deseja instalar:
+
+https://github.com/paulohcgs1997/saascodigo.git
+
+Informe um nome para a Instancia/Empresa que será instalada (Não utilizar espaços ou caracteres especiais, utilizar letras minúsculas;):
+
+minhaempresa
+
+Informe a Qt. de de Conexões/Whats que a poderá cadastrar: 1 a 9999
+
+9999
+
+Informe a Qt. de de Usuários/Atendentes que a poderá cadastrar: de 1 a 9999
+
+9999
+
+Digite o domínio do FRONTEND/PAINEL; Substitua pelo seu domínio
+
+chatbot.seusite.com.br
+
+Digite o domínio do BACKEND/API; Substitua pelo seu domínio
+
+api.seusite.com.br
+
+Digite a porta do FRONTEND para o Whaticket; Ex: 3000 A 3999
+
+3000
+
+Digite a porta do BACKEND para esta instancia; Ex: 4000 A 4999
+
+4000
+
+Digite a porta do REDIS/AGENDAMENTO MSG para o Whaticket; Ex: 5000 A 5999
+
+5000
+
+Fazer Login:
+
+Usuário padrão:
+admin@admin.com
+123456
+
+Token GitHub disponível nos detalhes do produto/serviços.
